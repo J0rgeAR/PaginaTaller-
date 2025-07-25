@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Fox Motors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Coches arriba -->
+  <div class="header-cars">
+    <img src="img/car2.png" alt="Coche Izquierdo" class="car-fixed left">
+  <img src="img/car1.png" alt="Coche Derecho" class="car-fixed right">
+  </div>
+
+  <!-- Carrusel -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide active" style="background-color: #f5f5f5;">
+        <img src="img/nosotros.jpg" alt="Nosotros" class="slide-img">
+        <h2>Nosotros / Historia</h2>
+        <p>Somos Fox Motors, con más de 20 años al servicio del automotor.</p>
+      </div>
+      <div class="carousel-slide" style="background-color: #e3f2fd;">
+        <img src="img/staff.jpg" alt="Staff" class="slide-img">
+        <h2>Staff</h2>
+        <p>Contamos con un equipo especializado en mecánica integral.</p>
+      </div>
+      <div class="carousel-slide" style="background-color: #fff3e0;">
+        <img src="img/precios.jpg" alt="Precios" class="slide-img">
+        <h2>Lista de Precios</h2>
+        <ul class="price-list">
+          <li>Aceite 40/20</li>
+          <li>Kit distribución</li>
+          <li>Juego de limpiaparabrisas</li>
+          <li>Bujías y cables</li>
+          <li>Chipeo</li>
+          <li>Lámparas LED</li>
+          <li>Filtro de aire</li>
+          <li>Filtro de nafta</li>
+          <li>Batería 12V</li>
+          <li>Pastillas de freno</li>
+          <li>Discos de freno</li>
+          <li>Amortiguadores</li>
+          <li>Correa de distribución</li>
+          <li>Radiador</li>
+          <li>Embrague completo</li>
+          <li>Sensores de oxígeno</li>
+          <li>Módulo de encendido</li>
+          <li>Bobinas</li>
+          <li>Escaneo general</li>
+          <li>Balanceo y alineación</li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button id="prev">⭠</button>
+      <button id="next">⭢</button>
+    </div>
+  </section>
+
+  <!-- Formulario de registro -->
+  <section>
+    <h1>Registro de Servicio</h1>
+    <form id="registroForm">
+      <label for="vehiculo">Vehículo</label>
+      <input type="text" id="vehiculo" name="vehiculo" required>
+
+      <label for="recibe">Recibe</label>
+      <input type="text" id="recibe" name="recibe" required>
+
+      <label for="entrega">Entrega</label>
+      <input type="text" id="entrega" name="entrega" required>
+
+      <label for="tipo">Tipo de servicio</label>
+      <select id="tipo" name="tipo">
+        <option value="mecanica">Mecánica</option>
+        <option value="pintura">Pintura</option>
+        <option value="electronica">Electrónica</option>
+      </select>
+
+      <label for="tiempo">Tiempo estimado</label>
+      <input type="text" id="tiempo" name="tiempo">
+
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <button type="submit">Registrar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Taller Fox Motors® - Todos los derechos reservados
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
